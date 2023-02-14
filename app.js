@@ -10,7 +10,7 @@ io.on('connection', (socket) =>  {
 
    socket.on('message', (msg) => {
       console.log(msg);
-      socket.emit("message", "hello world from server");
+      socket.emit("message", "hello from server");
    });
 
    socket.on('disconnect', () => {
